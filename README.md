@@ -1,6 +1,4 @@
-# Albelli test
-
-This repository contains a basic setup for a JavaScript project. 
+This repository contains a basic setup for a JavaScript project.
 See "_System requirements_" below to get up
 and running! The "_Project outline_" section walks you through a basic
 rundown of the structure.
@@ -10,7 +8,7 @@ rundown of the structure.
 You will be working in a company where our customers purchase
 printed products. As such your expertise should not be restricted to
 developing applications, but also extend to understand the requirements
-of print and how to translate between the app and the print world and 
+of print and how to translate between the app and the print world and
 vice versa.
 
 ### Goal
@@ -19,24 +17,25 @@ You should write a very simple application where there are two scenarios:
 
 ##### Scenario 1.
 
-* The user can select a photo file from his/her device and import it into the application
-* The user can position and scale this photo on a canvas. Important: Photo must always cover the full canvas.
-  * Correct:
+- The user can select a photo file from his/her device and import it into the application
+- The user can position and scale this photo on a canvas. Important: Photo must always cover the full canvas.
+
+  - Correct:
 
   ![correct](./doc/correct.png)
 
-  * Not correct:
+  - Not correct:
 
   ![not correct](./doc/not_correct.png)
 
-* Hit a submit button which will generate the print description as described [below](https://github.com/albumprinter/software-engineer-js-test/tree/photo-editor#print-description)
- These instructions should be stored locally as a JSON file.
+- Hit a submit button which will generate the print description as described [below](https://github.com/albumprinter/software-engineer-js-test/tree/photo-editor#print-description)
+  These instructions should be stored locally as a JSON file.
 
 ##### Scenario 2.
 
-* The user can hit an import button which loads a previously saved JSON description
-* Upon loading, the application should show a canvas that contains the photo
-* Photo is scaled and positioned as expected according to the loaded print instructions
+- The user can hit an import button which loads a previously saved JSON description
+- Upon loading, the application should show a canvas that contains the photo
+- Photo is scaled and positioned as expected according to the loaded print instructions
 
 #### Deliverables
 
@@ -96,9 +95,9 @@ the following output in JSON format:
 Once you receive this test by e-mail please copy this repository to
 your own GitHub account.
 
-You can use any libraries / frameworks that make your life easier, but strictly speaking they are not necessary. 
+You can use any libraries / frameworks that make your life easier, but strictly speaking they are not necessary.
 We are more interested in seeing how you would structure things.
- 
+
 Your application should run on the latest public version of Google Chrome.
 You don't have to worry about making your code work on any other browser, as
 such you are free to use anything that is supported by Chrome and not worry
@@ -124,17 +123,17 @@ In the root of this repository, you can resolve all these dependencies via
 the command line using:
 
     npm install
-    
+
 You can now start developing the application using Webpack by typing:
 
     npm start
-    
+
 The following will happen:
 
- * All JavaScript is included and built for the browser
- * All SASS styles are converted into CSS
- * Your browser will open and run the application
- * File watchers are started
+- All JavaScript is included and built for the browser
+- All SASS styles are converted into CSS
+- Your browser will open and run the application
+- File watchers are started
 
 You can add / remove / change files to in the source folder and your
 browser will automatically update to reflect the changes.
