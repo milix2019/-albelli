@@ -1,0 +1,152 @@
+@import url('../../node_modules/font-awesome/css/font-awesome.min.css');
+
+html,
+body {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  font-family: Helvetica, Verdana, sans-serif;
+  line-height: 1.5em;
+}
+
+.mainContainer {
+  align-content: stretch;
+  background-color: #2196f3;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main';
+  grid-template-rows: 111px auto;
+  gap: 0;
+  height: 100%;
+  padding: 0;
+  > * {
+    align-items: stretch;
+  }
+  > *:last-child {
+    background: lightskyblue;
+  }
+}
+
+// #imageContainer,
+// #debugContainer {
+//   padding: 1em;
+//   box-sizing: border-box;
+// }
+
+// .column {
+//   width: 48%;
+//   margin: 0.5%;
+//   border: 1px solid #000;
+//   vertical-align: top;
+
+//   &.left {
+//     float: left;
+//   }
+//   &.right {
+//     float: right;
+//   }
+// }
+
+// #imageContainer {
+//   img {
+//     width: 100%;
+//   }
+// }
+
+// #debugContainer {
+//   p {
+//     margin: 0;
+//     padding: 0;
+//   }
+// }
+
+.tollblarForm {
+  // align-content: stretch;
+  background-color: #2196f3;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 300px auto auto;
+  gap: 0;
+  width: 100%;
+  padding: 0;
+  > * {
+    align-items: stretch;
+  }
+  > *:first-child {
+    padding-left: 25px;
+  }
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 75px auto;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: 0;
+  padding-left: 25px;
+  > * {
+    align-items: center;
+  }
+
+  .moveButtons {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    > div {
+      position: absolute;
+      display: flex;
+      cursor: pointer;
+    }
+    > div:hover {
+      * {
+        color: red;
+      }
+    }
+    .triangleUp {
+      align-items: center;
+      justify-content: center;
+      top: 30px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    }
+    .triangleBottom {
+      align-items: baseline;
+      justify-content: center;
+      top: -2px;
+      bottom: 25px;
+      left: 0;
+      right: 0;
+      clip-path: polygon(0 0, 50% 100%, 100% 0);
+    }
+    .triangleLeft {
+      align-items: center;
+      justify-content: right;
+      top: 0;
+      bottom: 0;
+      left: 25px;
+      right: 0;
+      // padding-right: 2px;
+      clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    }
+    .triangleRight {
+      align-items: center;
+      justify-content: left;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 25px;
+      // padding-left: 2px;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+  }
+}
